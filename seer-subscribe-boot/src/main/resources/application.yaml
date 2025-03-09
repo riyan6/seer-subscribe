@@ -26,6 +26,7 @@ dubbo:
   application:
     qos-enable: false
     name: seer-subscribe
+    serialize-check-status: WARN
   config-center:
     namespace: bf8bb62e-8ab9-42e9-9913-548938bc2c64
   protocol:
