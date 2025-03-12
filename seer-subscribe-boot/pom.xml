@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.seer.subscribe</groupId>
         <artifactId>seer-subscribe</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>seer-subscribe-boot</artifactId>
@@ -23,12 +23,12 @@
         <dependency>
             <groupId>com.seer.subscribe</groupId>
             <artifactId>seer-subscribe-sdk</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.seer.node</groupId>
             <artifactId>seer-node-sdk</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -69,5 +69,22 @@
             <version>33.4.0-jre</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>seer-subscribe</finalName>
+    </build>
 
 </project>

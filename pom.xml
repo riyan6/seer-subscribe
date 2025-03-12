@@ -7,12 +7,12 @@
     <parent>
         <groupId>com.seer</groupId>
         <artifactId>seer-cloud</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <groupId>com.seer.subscribe</groupId>
     <artifactId>seer-subscribe</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <modules>
         <module>seer-subscribe-boot</module>
